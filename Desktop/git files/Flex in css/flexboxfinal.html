@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxfinal</title>
+    <style>
+
+a{
+    text-decoration: none;
+}
+        .topper {
+            background-color: rgb(0, 73, 102);
+            width: 100%;
+            text-decoration: none;
+            top: 0%;
+            position: sticky;
+            display: flex;
+            float: left;
+            justify-content: space-between;
+            
+        }
+        
+
+        .topper img {
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            display: block;
+            float: left;
+
+            
+        }
+
+        .topper a:hover {
+            background-color: darkcyan;
+           
+        }
+
+
+
+        .naviconn {
+            display: flex;
+            padding: 0px;
+        
+       }
+       .naviconn a {
+            color: whitesmoke;
+            padding: 20px;
+        
+       }
+
+       .containner {
+            padding: 19px;
+            position: relative;
+            display: inline-block;
+       }
+
+       .contant {
+            position: absolute;
+            padding-left: 10px;
+            display: none;
+            overflow: hidden;
+        
+       }
+
+       .contant a{
+            padding: 8px;
+            display: inline-block;
+       }
+
+       .containner:hover .contant{
+            display: block;
+       }
+
+
+
+
+        .searchbar {
+            padding: 17px;
+        }
+
+        .downtop {
+            background-color: darkgoldenrod;
+            width: 100%;
+            display: flex;
+            
+        }
+
+        .side-bar {
+            background-color: #05afe2;
+            width: 16%;
+            
+        }
+        .side-bar img {
+            width: 100%;
+            height: 150px;
+        }
+        .side-bar img:hover {
+            scale: 1.10;
+            transition: 1s;
+        }
+
+       
+      
+        .sidemenu a {
+            text-decoration: none;
+            color:whitesmoke;
+            padding: 15px;
+            display: block;
+            text-align: left;
+            padding: 15px;
+            margin: 15px;
+           
+        }
+
+        .sidemenu a:hover {
+            background-color: rgb(2, 40, 49);
+        }
+
+        .mfield {
+            background-color:lightblue;
+            width: 84%;
+           
+            
+        }
+        .mfielda img{
+            width: 100%;
+            height: 150px;
+        }
+
+
+        .mfieldb {
+            width: 100%;
+            
+        }
+img{
+    display: block;
+}
+        .mfieldb img {
+            width:33.33%;
+            height: 300px;
+            float: left;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .mfieldb img:hover {
+            scale: 1.09;
+            transition: 1s;
+        }
+
+        .mfieldc img{
+            display: block;
+            float: left;
+            display: flex;
+            justify-content: space-between;
+            width: 49.54%;
+            height: 300px;
+            border-style: dashed;
+           
+        }
+
+        
+        .chromozome img{
+            width: 100%;
+            
+            display: flex;
+            float: left;
+            border-style: solid;
+        }
+
+        .chromoa img{
+            width: 24%;
+            height: 200px;
+           
+        }
+        .chromob img{
+            width: 50.6%;
+            height: 200px;
+            
+        }
+
+        .chromoc img{
+
+        }
+        .chromod img{
+            width: 24%;
+            height: 200px;
+        }
+        
+
+       
+      
+       
+      
+
+    </style>
+</head>
+<body style="margin: 0%;">
+    
+    <div class="topper">
+
+        <div class="logo">
+            <img src="techlogotrans.png" alt="techlogotrans">
+        </div>
+
+       
+        <div class=naviconn>
+            <a href="#">HOME</a>
+            <a href="#">MENUE</a>
+            <a href="#">CONTACT</a>
+            <div class="containner">
+                <a href="#">SERVIC</a>
+            
+        <div class="contant">
+            <a href="#">Booking</a>
+            <a href="#">Payment</a>
+            <a href="#">Report</a>
+        </div>
+        </div>
+        </div>
+                
+
+        <div class="searchbar">
+            <input type="text">
+            <button>Search</button>
+
+        </div>
+        
+
+    </div>
+
+    <div class="downtop">
+
+        <div class="side-bar">
+            <img src="aiwebdev.webp" alt="aiwebdev">
+
+            <div class="sidemenu">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">BOOTSTRAP</a>
+                <a href="#">JAVA-SCRIPT</a>
+            </div>
+        </div>
+
+        <div class="mfield">
+
+            <div class="mfielda">
+                <img src="Webdev3.jpg" alt="Webdev3">
+            </div>
+
+            <div class="mfieldb">
+                <div>
+                    <img src="tech8.png" alt="tech8">
+                </div>
+
+                <div>
+                    <img src="tech7.jpg" alt="tech7">
+                </div>
+
+                <div>
+                    <img src="tech6png.png" alt="tech6png">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="mfieldc">
+        <div>
+            <img src="ittech.jpg" alt="ittech">
+        </div>
+
+        <div>
+            <img src="ittech0.jpg" alt="ittech0">
+        </div>
+
+       
+        <div></div>
+    </div>
+
+    <div class="chromozome">
+
+        <div class="chromoa">
+            <img src="techbody.jpg" alt="techbody">
+        </div>
+
+        <div class="chromob">
+            <img src="ittechc.jpg" alt="ittechc">
+        </div>
+
+        <div class="chromod">
+            <img src="techbodyb.jpg" alt="techbodyb">
+        </div>
+
+        
+
+        
+    </div>
+
+</body>
+</html>
