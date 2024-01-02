@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbarr {
+            width: 100%;
+            height: 75px;
+            background-color: rgb(47, 235, 235);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menuebar {
+            display: flex;
+            text-align: center;
+            padding:20px;
+           
+        }
+
+        .menuebar a {
+            display: inline-block;
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        .menuebar a:hover {
+            background-color: darkblue;
+        }
+
+        .container {
+            
+            position: relative;
+        }
+
+        
+        .content {
+            position: absolute;
+            overflow: hidden;
+            display: none;
+            
+           
+        }
+
+        .content a{
+            
+            padding: 5px;
+            
+            
+        }
+
+        .container:hover .content  {
+            display: block;
+        }
+
+        .searchbar {
+            display: inline-block;
+            padding: 25px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbarr">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="menuebar">
+            <a href="#">Home</a>
+            <a href="#">Menue</a>
+            <div class="container">
+            <a href="#">Service</a>
+            
+            <div class="content">
+            <a href="#">Offers</a>
+            <a href="#">Booking</a>
+            <a href="#">Payment</a>
+            </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <input type="text">
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>
